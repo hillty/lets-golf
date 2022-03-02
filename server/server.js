@@ -11,7 +11,7 @@ app.use('/landing.css', express.static(path.join(__dirname, '../public/landing.c
 app.use('/js', express.static(path.join(__dirname, '../public/index.js')))
 
 
-app.get('/', (req, res) => {
+app.get('/landing.html', (req, res) => {
     res.sendFile(path.join(__dirname, '../public/landing.html'))
 })
 // app.get('/styles', (req, res) => {
