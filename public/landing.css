@@ -31,3 +31,9 @@ a:hover {
     color: #848484;
 }
 
+.golfLogo {
+    display: flex;
+    height: 10vh;
+    margin-right: 45%;
+}
+
