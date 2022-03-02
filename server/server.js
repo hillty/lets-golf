@@ -6,20 +6,22 @@ const app = express()
 
 app.use(express.json())
 app.use(cors())
-
+//landing page 
 app.use('/landing.css', express.static(path.join(__dirname, '../public/landing.css')))
 app.use('/js', express.static(path.join(__dirname, '../public/index.js')))
-
+app.use('/list.css', express.static(path.join(__dirname, '../public/list.css')))
+app.use('/find.css', express.static(path.join(__dirname, '../public/find.css')))
 
 app.get('/landing.html', (req, res) => {
     res.sendFile(path.join(__dirname, '../public/landing.html'))
 })
-// app.get('/styles', (req, res) => {
-//     res.sendFile(path.join(__dirname, '../public/landing.css'))
-// })
-// app.get('/js', (req, res) => {
-//     res.sendFile(path.join(__dirname, '../public/index.js'))
-// })
+app.get('/list.html', (req, res) => {
+    res.sendFile(path.join(__dirname, '../public/list.html'))
+})
+app.get('/find.html', (req, res) => {
+    res.sendFile(path.join(__dirname, '../public/find.html'))
+})
+
 
 
 
