@@ -12,8 +12,12 @@ app.use(cors())
     //landing
 app.use('/landing.css', express.static(path.join(__dirname, '../public/landing.css')))
 app.use('/js', express.static(path.join(__dirname, '../public/index.js')))
+    //list
 app.use('/list.css', express.static(path.join(__dirname, '../public/list.css')))
+app.use('/js', express.static(path.join(__dirname, '../public/list.js')))
+    //find
 app.use('/find.css', express.static(path.join(__dirname, '../public/find.css')))
+app.use('/js', express.static(path.join(__dirname, '../public/find.js')))
 
 // get
 app.get('/landing.html', (req, res) => {
