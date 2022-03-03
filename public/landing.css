@@ -137,11 +137,15 @@ footer {
     justify-content: space-between;
     align-items: center;
 }
-#tyHill {
+.tyHill {
     display: flex;
     color: #ffffff;
     font-size: 18px;
     margin-left: 290px;
+}
+#gitLink {
+    display: flex;
+    align-items: center;
 }
 
 .golfLogo1 {
