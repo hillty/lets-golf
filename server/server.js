@@ -13,6 +13,7 @@ app.use('/js', express.static(path.join(__dirname, '../public/index.js')))
 app.use('/list.css', express.static(path.join(__dirname, '../public/list.css')))
 app.use('/find.css', express.static(path.join(__dirname, '../public/find.css')))
 
+
 app.get('/landing.html', (req, res) => {
     res.sendFile(path.join(__dirname, '../public/landing.html'))
 })
@@ -22,9 +23,6 @@ app.get('/list.html', (req, res) => {
 app.get('/find.html', (req, res) => {
     res.sendFile(path.join(__dirname, '../public/find.html'))
 })
-
-
-
 
 
 const port = process.env.PORT || 4207
