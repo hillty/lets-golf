@@ -16,6 +16,7 @@ header {
 nav {
     display: flex;
     justify-content: space-between;
+    margin-right: 25px;
 }
 
 a {

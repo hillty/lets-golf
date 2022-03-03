@@ -4,7 +4,7 @@ body {
     margin: auto;
 }
 
-/* HEADER SHITS */
+/* HEADER SHTUFFS */
 header {
     display: flex;
     background-color: #000000;
@@ -38,7 +38,7 @@ a:hover {
     height: 20px;
     margin-right: 45%;
 }
-/* HEADER SHITS */
+/* HEADER SHTUFFS */
 
 .landingImage {
     background-image: url("https://utahgolfguy.com/wp-content/uploads/2020/06/IMG_4194.jpg");
@@ -106,10 +106,16 @@ hr {
     width: 100%;
     height: 22vh;
 }
+#playTitleFixPls {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    height: 70px;
+}
 #playTitle {
     font-size: 36px;
     color: #ffffff;
-    margin-top: 5px;
+    margin-top: 0px;
     margin-left: 90px;
     margin-bottom: 10px;
 }
