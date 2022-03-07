@@ -127,9 +127,43 @@ hr {
     align-items: flex-end;
 }
 #bottomRight {
-    height: 75vh;
+    display: flex;
+    flex-direction: column;
+    height: 77vh;
     width: 100%;
     background-color: #000000;
+}
+#zipCodeContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 30vh;
+}
+.zipCodeCard {
+    display: flex;
+    flex-direction: column;
+    justify-content:space-evenly;
+    padding-left: 10px;
+    height: 100px;
+    width: 400px;
+    color: #ffffff;
+    background-color: #222222;
+}
+#feelingLuckyContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 30vh;
+}
+.feelingLuckyCard {
+    display: flex;
+    flex-direction: column;
+    justify-content:space-evenly;
+    padding-left: 10px;
+    height: 100px;
+    width: 400px;
+    color: #ffffff;
+    background-color: #222222;
 }
 /* MAIN SECTION */
 

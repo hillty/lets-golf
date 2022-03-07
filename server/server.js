@@ -38,6 +38,7 @@ app.get('/84604', ctrlr.getRiverside)
 app.get('/84003', ctrlr.getFox)
 app.get('/84606', ctrlr.getTimp)
 app.get('/84043', ctrlr.getThanksgiving)
+app.get('/feelinLucky', ctrlr.getLucky)
 
 const port = process.env.PORT || 4207
 
