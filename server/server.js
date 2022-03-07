@@ -14,10 +14,10 @@ app.use('/landing.css', express.static(path.join(__dirname, '../public/landing.c
 app.use('/js', express.static(path.join(__dirname, '../public/index.js')))
     //list
 app.use('/list.css', express.static(path.join(__dirname, '../public/list.css')))
-app.use('/js', express.static(path.join(__dirname, '../public/list.js')))
+app.use('/list.js', express.static(path.join(__dirname, '../public/list.js')))
     //find
 app.use('/find.css', express.static(path.join(__dirname, '../public/find.css')))
-app.use('/js', express.static(path.join(__dirname, '../public/find.js')))
+app.use('/find.js', express.static(path.join(__dirname, '../public/find.js')))
 
 // get
 app.get('/landing.html', (req, res) => {

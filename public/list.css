@@ -1,9 +1,9 @@
 body {
     font-family: 'Monteserrat';
-    background-color: #ffffff;
     margin: auto;
 }
 
+/* HEADER SHTUFFS */
 header {
     display: flex;
     background-color: #000000;
@@ -37,3 +37,78 @@ a:hover {
     height: 20px;
     margin-right: 45%;
 }
+/* HEADER SHTUFFS */
+
+
+/* MAIN */
+#mainArea {
+    width: 100%;
+    height: 80vh;
+    background-color: #000000;
+}
+hr {
+    margin-top: 0px;
+    margin-bottom: 0px;
+    background-color: #222222;
+    border-color: #222222;
+    height: 2px;
+}
+#enterCourseName {
+    color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 25vh;
+    width: 100%;
+    font-size: 28px;
+}
+#courseNameInput {
+    margin: 2px;
+    margin-top: 15px;
+}
+#courseNameBtn {
+    margin: 2px;
+    margin-top: 5px;
+    height: 25px;
+    width: 80px;
+    background-color: #ffffff;
+    border-width: 2px;
+    border-color: #000000;
+    color: #000000;
+    border-radius: 5px;
+}
+#courseNameBtn:hover {
+    cursor: pointer;
+    background-color: #000000;
+    border-color: #ffffff;
+    color: #ffffff;
+}
+/* MAIN */
+
+/* FOOTER ISH BOIIIIII */
+footer {
+    display: flex;
+    background-color: #222222;
+    width: 100%;
+    height: 10vh;
+    justify-content: space-between;
+    align-items: center;
+}
+.tyHill {
+    display: flex;
+    color: #ffffff;
+    font-size: 18px;
+    margin-left: 290px;
+}
+#gitLink {
+    display: flex;
+    align-items: center;
+}
+
+.golfLogo1 {
+    display: flex;
+    height: 20px;
+    margin-right: 200px;
+}
+/* FOOTER ISH BOIIIIII */

@@ -39,40 +39,99 @@ a:hover {
 }
 /* HEADER SHTUFFS */
 
-/* LARGE BLACK DIV */
-.lrgBlkC {
+/* MAIN SECTION */
+#main {
     display: flex;
-    flex-direction: row;
-    justify-content: flex-end;
+    width: 100%;
+    height: 80vh;
 }
-#lrgBlkI {
-    height: 77vh;
-    width: 65vw;
-    background-color: #000000;
-    margin-top: 3vh;
+#leftMain {
+    display: flex; 
+    width: 30%;
+    flex-direction: column;
+    justify-content: center;
+    justify-content: space-between;
+    align-items: center;
 }
-#smlBlkI {
+#courseFinder {
     display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     height: 20vh;
-    width: 35vw; 
+    width: 25vw;
+    margin-top: 45px;
+    background-color: #004C42;
+    color: #ffffff;
+    font-size: 28px;
+}
+#courseFinderBtn {
+    width: 10vw;
+    height: 20px;
+    margin-top: 3px;
+    background-color: #ffffff;
+    border-width: 2px;
+    border-color: #000000;
+    color: #000000;
+    border-radius: 5px;
+}
+#courseFinderBtn:hover {
+    cursor: pointer;
     background-color: #000000;
-    align-self: flex-end;
+    border-color: #ffffff;
+    color: #ffffff;
 }
-#findGreen {
-    /* height: 24vh;
-    width: 29vw; */
-    height: 50px;
-    width: 50px;
-    background-color: aqua;
+input {
+    margin-bottom: 3px;
+    width: 14vw;
 }
-#luckyGreen {
-/* height: 24vh;
-    width: 29vw; */
-    height: 50px;
-    width: 50px;
-    background-color: violet;
+#feelingLucky {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 20vh;
+    width: 25vw;
+    background-color: #004C42;
+    color: #ffffff;
+    font-size: 28px;
 }
-/* LARGE BLACK DIV */
+hr {
+    width: 75%;
+}
+#feelingLuckyBtn {
+    width: 10vw;
+    height: 20px;
+    margin-top: 3px;
+    background-color: #ffffff;
+    border-width: 2px;
+    border-color: #000000;
+    color: #000000;
+    border-radius: 5px;
+}
+#feelingLuckyBtn:hover {
+    cursor: pointer;
+    background-color: #000000;
+    border-color: #ffffff;
+    color: #ffffff;
+}
+#bottomLeft {
+    height: 20vh;
+    width: 100%;
+    background-color: #000000;
+}
+#rightMain {
+    display: flex;
+    width: 70%;
+    justify-content: flex-end;
+    align-items: flex-end;
+}
+#bottomRight {
+    height: 75vh;
+    width: 100%;
+    background-color: #000000;
+}
+/* MAIN SECTION */
 
 /* FOOTER ISH BOIIIIII */
 footer {
