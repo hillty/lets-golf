@@ -30,6 +30,14 @@ app.get('/find.html', (req, res) => {
     res.sendFile(path.join(__dirname, '../public/find.html'))
 })
 
+// zipCodeFinder end points
+app.get('/84062', ctrlr.getCedarHills)
+app.get('/84097', ctrlr.getCascadeFairways)
+app.get('/84004', ctrlr.getAlpine)
+app.get('/84604', ctrlr.getRiverside)
+app.get('/84003', ctrlr.getFox)
+app.get('/84606', ctrlr.getTimp)
+app.get('/84043', ctrlr.getThanksgiving)
 
 const port = process.env.PORT || 4207
 
