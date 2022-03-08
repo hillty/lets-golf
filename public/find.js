@@ -6,7 +6,7 @@ const courseFinderTeeBtn = document.getElementById('courseFinderBtn')
 // zipCodeFinder back end call
 const zipCodeFinder = () => {
     if(courseFinderInput.value !== "84062" && courseFinderInput.value !== "84097" && courseFinderInput.value !== "84004" && courseFinderInput.value !== "84604" && courseFinderInput.value !== "84003" && courseFinderInput.value !== "84606" && courseFinderInput.value !== "84043") {
-        alert('There is no course within this zip code.')
+        alert('There are no courses within this zip code area.')
     }else{
         axios.get(`http://localhost:4207/${courseFinderInput.value}`)
         .then(res => {
