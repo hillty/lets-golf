@@ -64,9 +64,10 @@ a:hover {
     background-color: #004C42;
     color: #ffffff;
     font-size: 28px;
+    border: 5px solid #000000;
 }
 #courseFinderBtn {
-    width: 85px;
+    width: 75px;
     height: 20px;
     margin-top: 3px;
     background-color: #ffffff;
@@ -83,7 +84,7 @@ a:hover {
 }
 input {
     margin-bottom: 3px;
-    width: 14vw;
+    width: 8vw;
 }
 #feelingLucky {
     display: flex;
@@ -95,12 +96,13 @@ input {
     background-color: #004C42;
     color: #ffffff;
     font-size: 28px;
+    border: 5px solid #000000;
 }
 hr {
     width: 75%;
 }
 #feelingLuckyBtn {
-    width: 85px;
+    width: 75px;
     height: 20px;
     margin-top: 3px;
     background-color: #ffffff;
@@ -116,7 +118,7 @@ hr {
     color: #ffffff;
 }
 #bottomLeft {
-    height: 20vh;
+    height: 25vh;
     width: 100%;
     background-color: #000000;
 }
@@ -148,6 +150,7 @@ hr {
     width: 400px;
     color: #ffffff;
     background-color: #222222;
+    border: 1px solid #ffffff;
 }
 #feelingLuckyContainer {
     display: flex;
@@ -160,10 +163,11 @@ hr {
     flex-direction: column;
     justify-content:space-evenly;
     padding-left: 10px;
-    height: 100px;
+    height: 150px;
     width: 400px;
     color: #ffffff;
     background-color: #222222;
+    border: 1px solid #ffffff;
 }
 /* MAIN SECTION */
 
