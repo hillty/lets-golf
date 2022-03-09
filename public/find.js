@@ -1,9 +1,8 @@
-
-// courseFinderInput variable
+// courseFinder variables
 const courseFinderInput = document.getElementById('courseFinderInput')
-// courseFinderBtn variable 
 const courseFinderTeeBtn = document.getElementById('courseFinderBtn')
-// zipCodeFinder back end call
+
+// zipCodeFinder function
 const zipCodeFinder = () => {
     if(courseFinderInput.value !== "84062" && courseFinderInput.value !== "84097" && courseFinderInput.value !== "84004" && courseFinderInput.value !== "84604" && courseFinderInput.value !== "84003" && courseFinderInput.value !== "84606" && courseFinderInput.value !== "84043") {
         alert('There are no courses within this zip code area.')
@@ -28,8 +27,11 @@ const zipCodeFinder = () => {
     }
 }
 
+
+// feelingLucky variable
 const feelingLuckyBtn = document.getElementById('feelingLuckyBtn')
 
+// feelingLucky function
 const randomCourseFinder = () => {
     axios.get('http://localhost:4207/feelinLucky')
     .then(res => {
@@ -49,15 +51,13 @@ const randomCourseFinder = () => {
     }) 
 }
 
-
-
+// div clearing function
 function removeAllChildNodes(parent) {
     while (parent.firstChild) {
         parent.removeChild(parent.firstChild);
     }
 }
 
-// zipCodeFinder button event
+// event listeners
 courseFinderTeeBtn.addEventListener('click', zipCodeFinder)
-
 feelingLuckyBtn.addEventListener('click', randomCourseFinder)

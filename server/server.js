@@ -1,8 +1,8 @@
 const express = require('express')
 const path = require('path')
 const cors = require('cors')
-const ctrlr = require('./controller/controller')
-const {seed} = require('./seed')
+const ctrlr = require('./controller/controller') // controller file
+const {seed} = require('./seed') // seed file
 
 const app = express()
 
@@ -12,19 +12,18 @@ app.use(cors())
 //post
 app.post('/seed', seed)
 
-
 // use
-    //landing
+    //landing page
 app.use('/landing.css', express.static(path.join(__dirname, '../public/landing.css')))
 app.use('/js', express.static(path.join(__dirname, '../public/index.js')))
-    //list
+    //list page
 app.use('/list.css', express.static(path.join(__dirname, '../public/list.css')))
 app.use('/list.js', express.static(path.join(__dirname, '../public/list.js')))
-    //find
+    //find page
 app.use('/find.css', express.static(path.join(__dirname, '../public/find.css')))
 app.use('/find.js', express.static(path.join(__dirname, '../public/find.js')))
 
-// get
+// get htmls
 app.get('/landing.html', (req, res) => {
     res.sendFile(path.join(__dirname, '../public/landing.html'))
 })
@@ -43,8 +42,11 @@ app.get('/84604', ctrlr.getRiverside)
 app.get('/84003', ctrlr.getFox)
 app.get('/84606', ctrlr.getTimp)
 app.get('/84043', ctrlr.getThanksgiving)
+
+// feelingLucky end point
 app.get('/feelinLucky', ctrlr.getLucky)
 
+// port
 const port = process.env.PORT || 4207
 
 app.listen(port, () => {

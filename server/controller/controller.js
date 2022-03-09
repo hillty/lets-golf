@@ -10,6 +10,7 @@ const sequelize = new Sequelize(process.env.CONNECTION_STRING, {
     }
 })
 
+// old "database" information
 // const cedarHills = [{
 //     "name": "Cedar Hills Golf Course",
 //     "zipcode": 84062,
@@ -58,7 +59,9 @@ const sequelize = new Sequelize(process.env.CONNECTION_STRING, {
 //     "holes": 18,
 //     "imageURL": "http://farm3.staticflickr.com/2746/4093285924_33e118a793_z.jpg"
 // }]
+// old "database" information
 
+// feelingLucky information
 const luckyCourses = [
     {
         "name": "Cedar Hills Golf Course",
@@ -103,6 +106,7 @@ const luckyCourses = [
         "imageURL": "http://farm3.staticflickr.com/2746/4093285924_33e118a793_z.jpg"
     }
 ]
+
 
 module.exports = {
 

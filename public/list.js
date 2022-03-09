@@ -1,3 +1,4 @@
+// variables
 const sliderContainer = document.querySelector('.slider-container')
 const slideRight = document.querySelector('.right-slide')
 const slideLeft = document.querySelector('.left-slide')
@@ -9,9 +10,11 @@ let activeSlideIndex = 0
 
 slideLeft.style.top = `-${(slidesLength - 1) * 100}vh`
 
+// event listeners
 upButton.addEventListener('click', () => changeSlide('up'))
 downButton.addEventListener('click', () => changeSlide('down'))
 
+// changeSlide function
 const changeSlide = (direction) => {
     const sliderHeight = sliderContainer.clientHeight
     if(direction === 'up') {
@@ -25,7 +28,7 @@ const changeSlide = (direction) => {
             activeSlideIndex = slidesLength - 1
         }
     }
-
+    
     slideRight.style.transform = `translateY(-${activeSlideIndex * sliderHeight}px)`
     slideLeft.style.transform = `translateY(${activeSlideIndex * sliderHeight}px)`
 }

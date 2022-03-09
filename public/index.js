@@ -1,8 +1,6 @@
-console.log('great success')
-
-// landing page button
+// courseFinder page button variable
 const findCourseBtn = document.querySelector('.findCourseBtn')
-// landing btn to find page
+// event listener
 findCourseBtn.addEventListener('click', (e) => {
     e.preventDefault()
     window.location.href="./find.html"
