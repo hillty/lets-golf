@@ -10,6 +10,8 @@ const zipCodeFinder = () => {
     }else{
         axios.get(`http://localhost:4207/${courseFinderInput.value}`)
         .then(res => {
+
+            console.log(res.data)
             
             removeAllChildNodes(zipCodeContainer)
             
@@ -17,8 +19,8 @@ const zipCodeFinder = () => {
             zipCodeCard.classList.add('zipCodeCard')
             
             zipCodeCard.innerHTML = `
-            <p id="courseName">Name- ${res.data.name}</p>
-            <p id="courseHoles">Holes- ${res.data.holes}</p>
+            <p id="courseName">Name- ${res.data[0].course_name}</p>
+            <p id="courseHoles">Holes- ${res.data[0].course_holes}</p>
             `
             
             zipCodeContainer.appendChild(zipCodeCard)
